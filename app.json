@@ -1,0 +1,25 @@
+{
+  "name": "Insta-Follow : madewgn",
+  "description": "host insta-foloow on heroku.",
+  "image": "heroku/python",
+  "repository": "https://git.madewgn.eu.org/insta-follow",
+  "keywords": ["python", "instagram" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
