@@ -7,8 +7,7 @@
   "addons": [ "heroku-postgresql" ],
   "env": {
     "IG_USERNAME": {
-      "description": "Your Instagram Username.",
-      "generator": "secret"
+      "description": "Your Instagram Username."
     }
   },
   "buildpacks": [
